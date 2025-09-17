@@ -119,6 +119,10 @@ public:
 
 ## 977.有序数组的平方
 
+[题目链接](https://leetcode.cn/problems/squares-of-a-sorted-array/)
+
+[文章讲解](https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html)
+
 写到这里发现自己双数组还是没有完全掌握
 自己写了几个方案，总是有过不去的案例，但至少都是尝试用双数组去写的
 直接写两个循环应该所有人都会hhh
