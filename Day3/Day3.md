@@ -108,5 +108,22 @@ public:
 
 然后觉得有点复杂就去用了递归
 三五行就解决了答案
+
+~~~c++
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(head == nullptr || head->next == nullptr) {
+            return head;
+        }
+
+        ListNode* newHead = reverseList(head->next);
+        head->next->next = head;
+        head->next = nullptr;
+        return newHead;
+    }
+};
+~~~
+
 ---
 学习了链表的基础知识，复习递归，类，结构体的使用
