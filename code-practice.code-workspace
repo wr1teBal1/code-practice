@@ -18,7 +18,15 @@
 			"string_view": "cpp",
 			"initializer_list": "cpp",
 			"ranges": "cpp",
-			"span": "cpp"
+			"span": "cpp",
+			"unordered_map": "cpp",
+			"memory": "cpp",
+			"optional": "cpp",
+			"istream": "cpp",
+			"streambuf": "cpp",
+			"functional": "cpp",
+			"tuple": "cpp",
+			"variant": "cpp"
 		}
 	}
 }
