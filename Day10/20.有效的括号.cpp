@@ -12,7 +12,8 @@ public:
         for (char c : s) {
             if(c == '(' || c == '{' || c == '[') {
                 stk.push(c);
-            } else {
+            } 
+            else {
                 if (stk.empty()) return false; // 遇到右括号时，栈为空，说明不匹配
                 char top = stk.top();
                 if ((c == ')' && top == '(') ||
