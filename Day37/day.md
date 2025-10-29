@@ -22,7 +22,24 @@
 [题目链接及解析](https://programmercarl.com/0377.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%E2%85%A3.html)
 
 
+~~~c++
+class Solution {
+public:
+    int combinationSum4(vector<int>& nums, int target) {
+        vector<int> dp(target + 1, 0);
+        dp[0] = 1;
+        for (int i = 0; i <= target; i++) { // 遍历背包
+            for (int j = 0; j < nums.size(); j++) { // 遍历物品
+                if (i - nums[j] >= 0 && dp[i] <= INT_MAX - dp[i - nums[j]]) {
+                    dp[i] += dp[i - nums[j]];
+                }
+            }
+        }
+        return dp[target];
+    }
+};
 
+~~~
 
 
 ### 70. 爬楼梯 （进阶） 
